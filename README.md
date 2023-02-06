@@ -40,8 +40,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](Homework/02-Challenge/My-Portfolio/assets/images/02-advanced-css-homework-demo.gif)
+![](My-Portfolio/assets/images/02-advanced-css-homework-demo.gif)
+
 
 ## Deployment 
 
-Deployed application can be found at
+Deployed application can be found at https://loyallhart.github.io/My-Portfolio/
