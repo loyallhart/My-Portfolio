@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: var(--dark);
     background-color: var(--light) line-height: 1.5
 }
@@ -32,6 +32,8 @@ header h1 {
     line-height: 1;
 }
 
+/* navigation */
+
 nav {
     display: flex;
     flex-direction: column;
@@ -44,6 +46,8 @@ nav a {
     margin-right: 10px;
     font-size: 22px;
 }
+
+/* hero section */
 
 .hero {
     height: 800px;
@@ -68,21 +72,26 @@ nav a {
     padding: 120px 25px;
 }
 
+/* about-section */
 
-/* .main-container {
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    } */
+    #headshot {
 
-.about-section>h2 {
+            display: block;
+            width: 150px;
+            border-radius: 75px;
+            margin-left: 20px;
+          }
+
+.about-section > h2 {
     flex: 0 0 15%;
-    text-align: right;
+    text-align: center;
     font-size: 32px;
     line-height: 1.5;
     border-right: 3px dashed;
-    padding-right: 10px
+    padding-right: 20px
+
 }
+
 
 .about-section {
     flex: 0 0 77%;
@@ -99,7 +108,8 @@ nav a {
     margin-right: auto;
 }
 
-.about-section>article {
+.about-section > article {
+    padding-top: 50px;
     flex: 0 0 80%;
 }
 
@@ -115,13 +125,8 @@ nav a {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    border-top: 0 !important;
+    background-color: var(--main);
 }
-
-.work-section+* {
-    border-top: 0 !important;
-}
-
 
 .work-section article {
     -moz-align-items: center;
@@ -149,11 +154,13 @@ nav a {
     width: 40%;
 }
 
-/* .work-section img { */
+/* subtitles */
 
 .work-section article h3 {
     font-size: 24px;
     background-color: var(--background);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--main)
 }
 
 .work-section article p {
@@ -167,7 +174,6 @@ nav a {
 
 .work-section article div {
     padding: 10px 5px;
-
     background-color: var(--background)
 }
 
@@ -179,7 +185,10 @@ nav a {
     top: 0;
     width: 100%;
     z-index: 4;
+    color: var(--main)
 }
+
+/* transitions */
 
 .work-section article:before {
     -moz-transition: opacity 0.5s ease;
@@ -225,11 +234,6 @@ nav a {
     opacity: 0;
 }
 
-.work-section article:nth-child(4n - 1),
-.work-section article:nth-child(4n - 2) {
-    width: 40%;
-}
-
 .work-section article:nth-child(6n - 5):before {
     background-color: #6fc3df;
 }
@@ -254,9 +258,6 @@ nav a {
     background-color: #87c5a4;
 }
 
-/* subtitles */
-
-
 
 /* work background images */
 
@@ -266,8 +267,8 @@ nav a {
     background-position: center;
     padding: 50px 20px;
     min-height: 400px;
-    max-height: 600px;
-
+    max-height: 600px; 
+    
 }
 
 #image2 {
@@ -320,3 +321,271 @@ nav a {
 
 }
 
+/* Footer */
+
+.contact-section > h2 {
+    flex: 0 0 15%;
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.5;
+    border-right: 3px dashed;
+    padding-right: 20px
+}
+
+.contact-section {
+    flex: 0 0 77%;
+    color: var(--dark);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 25px 0;
+    padding: 10px 0;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-section article {
+    padding-top: 40px;
+    flex: row;
+    justify-content: space-around;
+
+}
+
+.contact-section a {
+
+    color: var(--main);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+}
+
+.contact-section h3 {
+    padding-top: 40px;
+    flex: row;
+    justify-content: space-around;
+
+
+}
+
+/* responsive design */
+
+@media screen and (max-device-width : 1199px) {
+
+    .about-section > h2 {
+        flex: 0 0 15%;
+        text-align: center;
+        font-size: 32px;
+        line-height: 1.5;
+        border-right: none;
+        padding-right: 20px
+    }
+
+
+    #image1 {
+        background-image: url(../images/A11Y.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px 20px;
+        min-height: 400px;
+        max-height: 600px; 
+        width:100%;
+        
+    }
+    
+    #image2 {
+        background-image: url(../images/javascript-book.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 100px 0px 100px;
+        min-height: 400px;
+        max-height: 600px;
+        width:100%;
+    
+    }
+    
+    #image3 {
+        background-image: url(../images/diabetes-management.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px 20px;
+        min-height: 400px;
+        max-height: 600px;
+        width:100%;
+    
+    }
+    
+    #image4 {
+        background-image: url(../images/my-food-diary.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 100px 0px 100px;
+        min-height: 400px;
+        max-height: 600px;
+        width:100%;
+    
+    }
+    
+    #image5 {
+        background-image: url(../images/project-brain-control.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px 20px;
+        min-height: 400px;
+        max-height: 600px;
+        width:100%;
+    
+    }
+    
+    #image6 {
+        background-image: url(../images/Hero2.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 100px 0px 100px;
+        min-height: 400px;
+        max-height: 600px;
+        width:100%;
+    
+    }
+    
+    }
+
+
+
+@media screen and (max-device-width : 960px) {
+
+    h1 {
+        display: none;
+
+
+    }
+    
+    
+    .about-section > h2 {
+        flex: 0 0 15%;
+        text-align: center;
+        font-size: 32px;
+        line-height: 1.5;
+        border-right: none;
+        padding-right: 20px
+    }
+
+
+
+    #image1 {
+        background-image: url(../images/A11Y.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px 20px;
+        min-height: 400px;
+        max-height: 600px; 
+        width:100%;
+        
+    }
+    
+    #image2 {
+        background-image: url(../images/javascript-book.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 100px 0px 100px;
+        min-height: 400px;
+        max-height: 600px;
+        width:100%;
+    
+    }
+    
+    #image3 {
+        background-image: url(../images/diabetes-management.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px 20px;
+        min-height: 400px;
+        max-height: 600px;
+        width:100%;
+    
+    }
+    
+    #image4 {
+        background-image: url(../images/my-food-diary.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 100px 0px 100px;
+        min-height: 400px;
+        max-height: 600px;
+        width:100%;
+    
+    }
+    
+    #image5 {
+        background-image: url(../images/project-brain-control.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px 20px;
+        min-height: 400px;
+        max-height: 600px;
+        width:100%;
+    
+    }
+    
+    #image6 {
+        background-image: url(../images/Hero2.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 100px 0px 100px;
+        min-height: 400px;
+        max-height: 600px;
+        width:100%;
+    
+    }
+    
+    }
+
+@media screen and (max-device-width : 768px) {
+
+.about-section > h2 {
+    flex: 0 0 15%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.5;
+    border-right: none;
+
+
+}
+
+
+.contact-section > h2 {
+    display: none;
+   text-align: center;
+   font-size: 32px;
+   line-height: 1.5;
+   border-right: none;
+   padding-right: 20px
+}
+
+.contact-section article a {
+   display: flex;
+   flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.contact-section h3 {
+   display: none;
+
+}
+   
+    
+}
+
+@media screen and (max-device-width : 480px) {
+    .hero p {
+        display: none;
+    }
+    
+}
