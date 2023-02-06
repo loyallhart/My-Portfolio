@@ -38,9 +38,9 @@ I WANT to view a potential employee's deployed portfolio of work samples
 ## Mock-Up
 
 
-The following animation shows the web application's appearance and functionality:
+The following shows a sample of the web application's appearance:
 
-![](assets/images/02-advanced-css-homework-demo.gif)
+![](assets/images/Sample.jpg)
 
 
 ## Deployment 
