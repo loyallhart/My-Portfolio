@@ -45,4 +45,4 @@ The following shows a sample of the web application's appearance:
 
 ## Deployment 
 
-Deployed application can be found at https://loyallhart.github.io/My-Portfolio/
+My Deployed application can be found at https://loyallhart.github.io/My-Portfolio/
